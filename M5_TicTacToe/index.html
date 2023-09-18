@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tic Tac Toe</title>
     <link rel="stylesheet" href="style.css" >
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,11 +12,22 @@
 </head>
 <body>
     <div class="container">
-        <div id="grid" class="grid"></div>
-      <div class="row">
+        <div id="grid" class="grid">
+          <div class="box borderRight borderBottom"></div>
+          <div class="box borderBottom"></div>
+          <div class="box borderLeft borderBottom"></div>
+          <div class="box borderRight borderBottom"></div>
+          <div class="box borderBottom"></div>
+          <div class="box borderLeft borderBottom"></div>
+          <div class="box borderRight"></div>
+          <div class="box "></div>
+          <div class="box borderLeft"></div>
+        </div>
+        <br/>
+        <p id="turn" class="winner">Who's Turn ---> X</p>
+        <p id="winner" class="winner">No Winner Yet</p>
         <button id="reset" class="btn btn-primary">Reset</button>
-      </div>
-      <p id="winner" class="winner"></p>
+      
     </div>
 </body>
 </html>
