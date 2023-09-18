@@ -1,6 +1,5 @@
 * {
     box-sizing: border-box;
-    font-size: 30px;
 }
 
 body{
@@ -10,20 +9,9 @@ body{
     font-family: 'Ubuntu';
 }
 
-button{
-    width: 60px;
-    border-radius: 10px;
-}
-
-button.reset{
-    padding:5px;
-    width: auto;
-    margin: 20px;
-    font-size: 25px;
-}
-
 input{
-    width: 150px;
+    width: 250px;
+    padding: 5px;
     border-radius: 10px;
 }
 
@@ -31,7 +19,32 @@ input{
     margin: auto auto;
     text-align: center;
 }
-.counter{
-    font-size: 100px;
-    font-weight: 1000;
+
+.chips-display{
+    margin: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
 }
+
+.chip {
+    margin: 0.5em;
+    padding: 0.5em 0.75em;
+    background-color: #eee;
+    border: 1px solid lightgrey;
+    border-radius: 1em;
+  }
+
+  .chip .remove {
+    border: 0;
+    display: none;
+    margin-left: 0.5em;
+    color: red;
+    cursor: pointer;
+  }
+  
+  .chip.finalized .remove {
+    display: inherit;
+    
+  }

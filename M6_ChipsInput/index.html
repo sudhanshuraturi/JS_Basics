@@ -12,18 +12,16 @@
 </head>
 <body>
     <div class="container">
-        <div class="counter">0</div>
-        <div class="updateButtons">
-            <button class="add">+</button>
-            <button class="sub">-</button>
-        </div>
-        <div class="updateBy">
-            <p>
-                Increment/Decrement by:
-            </p>
-            <input type="number"/>
-        </div>
-        <button class="reset">Reset</button>
+        <form>
+            <input type="text" id="userInput" autocomplete="off" placeholder="Type & hit Enter" />
+        </form>
+        <div class="chips-display"></div>
     </div>
 </body>
+<template id="chipTemplate">
+    <div class="chip flex-center">
+      <span class="chip-name"></span>
+      <button class="remove flex-center">&#x2715;</button>
+    </div>
+  </template>
 </html>
