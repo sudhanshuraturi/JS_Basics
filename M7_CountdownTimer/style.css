@@ -1,37 +1,83 @@
 * {
-    box-sizing: border-box;
-    font-size: 30px;
-}
-
-body{
-    height: 100vh;
-    width: 100vw;
-    background-color: rgb(209, 203, 203);
-    font-family: 'Ubuntu';
-}
-
-button{
-    width: 60px;
-    border-radius: 10px;
-}
-
-button.reset{
-    padding:5px;
-    width: auto;
-    margin: 20px;
-    font-size: 25px;
-}
-
-input{
-    width: 150px;
-    border-radius: 10px;
-}
-
-.container{
-    margin: auto auto;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-family: sans-serif;
+  }
+  
+  .container {
+    height: 200px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .container__labels,
+  .container__inputs,
+  .container__btns {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .container__btns {
+    margin-top: 20px;
+  }
+  
+  .container__labels--label {
+    width: 20%;
     text-align: center;
-}
-.counter{
-    font-size: 100px;
-    font-weight: 1000;
-}
+    font-size: 30px;
+    padding: 5px 10px;
+  }
+  
+  .container__inputs--time {
+    justify-self: center;
+    align-self: center;
+    border: none;
+    font-size: 50px;
+    width: 90px;
+    height: 50px;
+  }
+  
+  .container__inputs--colon {
+    justify-self: center;
+    align-self: center;
+    font-size: 30px;
+    margin: 0;
+    padding: 5px 10px;
+  }
+  
+  .btn {
+    width: 48%;
+    height: 50px;
+    font-size: 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+  }
+  
+  input {
+    text-align: center;
+    outline: none;
+  }
+  
+  .stop {
+    display: none;
+  }
+  
+  
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
