@@ -12,18 +12,19 @@
 </head>
 <body>
     <div class="container">
-        <div class="counter">0</div>
-        <div class="updateButtons">
-            <button class="add">+</button>
-            <button class="sub">-</button>
+        <div id="json-holder"></div>
+        <button class="get-json-button">Get JSON</button>
+        <div><output></output></div>
+      </div>
+  
+      <template class="json-template">
+        <div class="json-container">
+          <span class="arrow hide">▶</span>
+          <input type="text" class="key" placeholder="key" />
+          <input type="text" class="value" placeholder="value" />
+          <button class="add">+</button>
+          <button class="remove">x</button>
         </div>
-        <div class="updateBy">
-            <p>
-                Increment/Decrement by:
-            </p>
-            <input type="number"/>
-        </div>
-        <button class="reset">Reset</button>
-    </div>
+      </template>
 </body>
 </html>
