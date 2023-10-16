@@ -12,18 +12,21 @@
 </head>
 <body>
     <div class="container">
-        <div class="counter">0</div>
-        <div class="updateButtons">
-            <button class="add">+</button>
-            <button class="sub">-</button>
+        <form id="todoForm">
+            <input type="text" id="todoItemInput" autocomplete="off" placeholder="Add Item" />
+          </form>
+    
+          <div id="listContainer" class="list-container"></div>
+          <div class="no-elements">Ooops! List is empty</div>
         </div>
-        <div class="updateBy">
-            <p>
-                Increment/Decrement by:
-            </p>
-            <input type="number"/>
-        </div>
-        <button class="reset">Reset</button>
+    
+        <template id="todo"
+          ><li>
+            <span class="text"></span>
+            <button class="edit">✏️</button>
+            <button class="delete">🗑️</button>
+          </li>
+        </template>
     </div>
 </body>
 </html>

@@ -12,18 +12,15 @@
 </head>
 <body>
     <div class="container">
-        <div class="counter">0</div>
-        <div class="updateButtons">
-            <button class="add">+</button>
-            <button class="sub">-</button>
-        </div>
-        <div class="updateBy">
-            <p>
-                Increment/Decrement by:
-            </p>
-            <input type="number"/>
-        </div>
-        <button class="reset">Reset</button>
+        <div class="progress-bar">
+            <div class="progress" id="progress"></div>
+          </div>
+    
+          <div class="progress-controller">
+            <button id="start" class="btn btn-primary">Start</button>
+            <button id="stop" class="btn btn-primary">Pause</button>
+            <button id="reset" class="btn btn-primary">Reset</button>
+          </div>
     </div>
 </body>
 </html>

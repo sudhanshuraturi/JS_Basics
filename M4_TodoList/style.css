@@ -1,6 +1,5 @@
 * {
     box-sizing: border-box;
-    font-size: 30px;
 }
 
 body{
@@ -10,28 +9,42 @@ body{
     font-family: 'Ubuntu';
 }
 
-button{
-    width: 60px;
-    border-radius: 10px;
-}
-
-button.reset{
-    padding:5px;
-    width: auto;
-    margin: 20px;
-    font-size: 25px;
-}
-
 input{
-    width: 150px;
-    border-radius: 10px;
+    width: 550px;
+    font-size: 25px;
+    margin-bottom: 10px;
 }
 
 .container{
     margin: auto auto;
     text-align: center;
 }
-.counter{
-    font-size: 100px;
-    font-weight: 1000;
+
+.no-elements {
+    display: none;
+  }
+  
+.list-container:empty ~ .no-elements {
+display: block;
+font-size: 1.5rem;
 }
+  
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  
+  button {
+    margin-left: 0.5rem;
+    color: white;
+    font-size: 1rem;
+    background: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button.edit {
+    transform: rotateY(180deg);
+  }

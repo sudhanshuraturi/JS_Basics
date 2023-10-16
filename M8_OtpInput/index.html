@@ -8,22 +8,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-    <script src="script.js" defer></script>
+    
 </head>
 <body>
     <div class="container">
-        <div class="counter">0</div>
-        <div class="updateButtons">
-            <button class="add">+</button>
-            <button class="sub">-</button>
-        </div>
-        <div class="updateBy">
-            <p>
-                Increment/Decrement by:
-            </p>
-            <input type="number"/>
-        </div>
-        <button class="reset">Reset</button>
+        <div class="info">
+            OTP field allowing only digits. It supports backspace, delete, tab, shift + tab, left and right arrows along
+            with paste functionality.
+          </div>
+    
+          <div class="display" id="display"></div>
     </div>
+    <script src="./script.js"></script>
+   
 </body>
 </html>
