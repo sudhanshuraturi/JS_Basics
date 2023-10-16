@@ -49,7 +49,7 @@ const toggleNeighbours = target => {
   target.previousElementSibling.disabled = !target.previousElementSibling.disabled;
 };
 
-const comment = createComment('Sadanand', 'Hello, world', { hasNoDelete: true, hasNoEdit: true });
+const comment = createComment('Sudhanshu Raturi', 'Hi', { hasNoDelete: true, hasNoEdit: true });
 commentContainer.appendChild(comment);
 
 let isCommentOn = false;
